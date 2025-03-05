@@ -23,7 +23,6 @@ public class PlmSldKitController {
 
     @GetMapping
     public List<PlmSldKit> getAllSealedKits() {
-    	System.out.println("✅ selectAll() 호출됨");
         return plmSldKitMapper.selectAll();
     }
 }
