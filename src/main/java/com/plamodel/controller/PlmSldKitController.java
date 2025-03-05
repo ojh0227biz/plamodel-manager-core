@@ -23,6 +23,6 @@ public class PlmSldKitController {
 
     @GetMapping
     public List<PlmSldKit> getAllSealedKits() {
-        return plmSldKitMapper.selectAll();
+        return plmSldKitMapper.selectAll(); //
     }
 }
