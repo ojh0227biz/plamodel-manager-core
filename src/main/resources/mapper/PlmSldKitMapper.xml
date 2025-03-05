@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.plamodel.mapper.PlmSldKitMapper">
+
+  <select id="selectAll" resultType="com.plamodel.entity.PlmSldKit">
+    SELECT 
+      KIT_ID as kitId,
+      KIT_GRD as kitGrd,
+      KIT_SRS as kitSrs,
+      KIT_NAME as kitName,
+      KIT_PRSC_PRC as kitPrscPrc,
+      KIT_LST_PRC as kitLstPrc
+    FROM PLM_SLD_KIT
+  </select>
+
+</mapper>
